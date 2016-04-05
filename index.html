@@ -1,0 +1,34 @@
+<html>
+  <title>Search Judiciary</title>
+  <head>
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/angular-route.min.js"></script>
+    <script src="scripts/script.js"></script>
+    <link href="styles/main.css" rel="stylesheet" type="text/css">
+ </head>
+
+ <body ng-app="judApp">
+    <div class="htitle">
+      <h2>Court Locator</h2>
+    </div>
+
+    <div class="city" >
+        <h5>Find Judiciary</h5>
+          <!-- Create a binding between the searchString model and the text field -->
+          <input type="text" ng-model="searchString" placeholder="Enter your search terms" value="Saket"/>
+        <h5> Click to find court near by your City !</h5>
+        <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#delhi">Delhi</a></li>
+                    <li><a href="#mumbai">Mumbai</a></li>
+                    <li><a href="#rajasthan">Rajasthan</a></li>
+                    <li><a href="#up">U.P</a></li>
+       </ul>
+    </div>
+
+                 
+      <div>
+        {{message}}
+        <div ng-view></div>
+      </div>
+ </body>
+</html>

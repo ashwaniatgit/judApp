@@ -1,0 +1,22 @@
+body{
+	background-color: #EEEEEE;
+	margin: 0px auto;
+}
+.htitle{
+	    padding: 1% 0;
+    background-color: rgb(229, 57, 53);
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    margin: 0 auto;
+}
+.city{
+    width: 44%;
+    float: left;
+	font-size: 20px;
+    margin: 10px;
+}
+.map{
+    float: left;
+    width: 53%;
+}
