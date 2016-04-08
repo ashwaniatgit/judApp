@@ -1,0 +1,15 @@
+<!-- this is our template which will set in ng-view section
+     in main page(index.html)
+     in this template by $routeParam set in script then scope value set dynamic
+     in our case we are using two variable $scope.page and $scope.message
+     -->
+<h2>Angular.js JSON Fetching</h2>
+<div class="alert bg-success"><b>{{message}}</b></div>
+  <div ng-controller="stateCtrl">
+  	<div ng-repeat="n in state" ng-if="s.code == page"><h4>State : {{n.name | distinct}}</h4></div>
+        <div ng-repeat="s in state" ng-if="s.name == page">
+    	<!-- <h4>State : {{s.name | uppercase}}</h4> -->
+    	<h4>Name Of Courts : {{s.courts}}</h4>
+    	<h5>State Code : {{s.code}}</h5>
+    </div>
+  </div	>

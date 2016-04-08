@@ -1,0 +1,68 @@
+[
+  {
+    "code": "ndls",
+    "name": "delhi",
+    "courts": "Saket"
+  },
+  {
+    "code": "ndls",
+    "name": "delhi",
+    "courts": "Dwarka"
+  },
+  {
+    "code": "ndls",
+    "name": "delhi",
+    "courts": "Rohini"
+  },
+  {
+    "code": "ndls",
+    "name": "delhi",
+    "courts": "Tishajari"
+  },
+
+  {
+    "code": "rjn",
+    "name": "rajasthan",
+    "courts": "Jaipur"
+  },
+  {
+    "code": "rjn",
+    "name": "rajasthan",
+    "courts": "Ajmer"
+  },
+  {
+    "code": "rjn",
+    "name": "rajasthan",
+    "courts": "Alawar"
+  },
+  {
+    "code": "mum",
+    "name": "mumbai",
+    "courts": "Thane"
+  },
+  {
+    "code": "mum",
+    "name": "mumbai",
+    "courts": "Pune"
+  },
+  {
+    "code": "mum",
+    "name": "mumbai",
+    "courts": "Andheri"
+  },
+  {
+    "code": "up",
+    "name": "up",
+    "courts": "Lucknow"
+  },
+  {
+    "code": "up",
+    "name": "up",
+    "courts": "Allahabad"
+  },
+  {
+    "code": "up",
+    "name": "up",
+    "courts": "Ghazipur"
+  }
+]

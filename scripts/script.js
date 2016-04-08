@@ -3,47 +3,28 @@
     var judApp = angular.module('judApp', ['ngRoute']);
 
     // configure our routes
-    judApp.config(['$routeProvider', function($routeProvider) {
+    judApp.config(['$routeProvider', function($routeProvider, $locationProvider) {
+        console.log("route");
         $routeProvider
-        // route for the Delhi page
-            .when('/delhi', {
-                templateUrl : 'views/delhi.html',
-                controller  : 'delhiCtrl'
-            })
-            // route for the Mumbai page
-            .when('/mumbai', {
-                templateUrl : 'views/mumbai.html',
-                controller  : 'mumbaiCtrl'
-            })
+        // set route for dynamic page
+        .when('/:pagename',
+        {
+            controller:'routeCtrl',
+            templateUrl: 'views/uirouter.html'
 
-            // route for the Rajasthan page
-            .when('/rajasthan', {
-                templateUrl : 'views/rajasthan.html',
-                controller  : 'rajCtrl'
-            })
+        })// if not match with any route config then send to home page
+        .otherwise({
+            redirectTo: '/'
+        });
 
-            // route for the UP page
-            .when('/up', {
-                templateUrl : 'views/up.html',
-                controller  : 'upCtrl'
-            });
     }]);
 
     
     // create the controller and inject Angular's $scope
-    judApp.controller('delhiCtrl', function($scope) {
+    judApp.controller('routeCtrl', function($scope, $routeParams) {
         // create a message to display in our view
-        $scope.message = 'You Are in Delhi';
+        $scope.page=$routeParams.pagename;
+        $scope.message = "(',')---I am on "+$routeParams.pagename +" page---(',')";
     });
 
-    judApp.controller('mumbaiCtrl', function($scope) {
-        $scope.message = 'You Are in Mumbai';
-    });
-
-    judApp.controller('rajCtrl', function($scope) {
-        $scope.message = 'You are in Rajasthan';
-    });
-
-    judApp.controller('upCtrl', function($scope) {
-        $scope.message = 'You are in Up.';
-    });
+    
